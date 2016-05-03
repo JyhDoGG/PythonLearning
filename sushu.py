@@ -3,7 +3,7 @@
 
 'sushu'
 
-__auther__='Jyh'
+__author__='Jyh'
 
 #用埃式筛法打印1000内质数
 
