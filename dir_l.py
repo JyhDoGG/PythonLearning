@@ -3,7 +3,7 @@
 
 'a dir -l model'
 
-__auther__='Jyh'
+__author__='Jyh'
 
 import os
 
