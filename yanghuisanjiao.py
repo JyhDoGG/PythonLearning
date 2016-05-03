@@ -3,7 +3,7 @@
 
 'yanghuisanjiao'
 
-__auther__='Jyh'
+__author__='Jyh'
 
 #杨辉三角
 
