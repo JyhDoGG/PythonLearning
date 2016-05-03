@@ -3,7 +3,7 @@
 
 'ZhengzeYanzhengEmail'
 
-__auther__ = 'Jyh'
+__author__ = 'Jyh'
 
 import re
 
