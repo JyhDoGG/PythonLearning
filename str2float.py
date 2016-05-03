@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#coding=utf-8
+
+__author__='Jyh'
 
 #将字符串转换为浮点数
 
