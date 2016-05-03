@@ -3,7 +3,7 @@
 
 'find file with s in current dir and sub-dir'
 
-__auther__='Jyh'
+__author__='Jyh'
 
 import os
 
