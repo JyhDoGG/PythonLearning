@@ -3,7 +3,7 @@
 
 'SafeBase64Decode'
 
-__author='Jyh'
+__author__='Jyh'
 
 import base64
 
