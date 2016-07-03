@@ -10,8 +10,6 @@ import time
 import os
 import threading
 
-lock = threading.Lock()
-
 def TestWeb(url):       #测试网站是否OK
     conn = http.client.HTTPConnection ('ce.sysu.edu.cn')
     conn.request('GET', url)
