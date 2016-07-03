@@ -28,11 +28,8 @@ def TestWeb(url):       #测试网站是否OK
         
 def RecycleAPP(url):        #回收应用程序池
     dict = {'/':'ce.chem2015', '/hope/':'ce.hope'}  #网站对应的应用程序名
-    commend1 = 'c:\windows\system32\inetsrv\AppCmd.exe stop apppool /apppool.name:"%s"' %dict[url]
-    commend2 = 'c:\windows\system32\inetsrv\AppCmd.exe start apppool /apppool.name:"%s"' %dict[url]
-    os.system(commend1)
-    time.sleep(30)
-    os.system(commend2)
+    commend = 'c:\windows\system32\inetsrv\AppCmd.exe recycle apppool /apppool.name:"%s"' % dict[url]
+    os.system(commend)
     
 t1 = threading.Thread(target=TestWeb, args=('/',)) 
 t2 = threading.Thread(target=TestWeb, args=('/hope/',)) 
