@@ -27,7 +27,7 @@ def in2post(s):
                         result = result + stack[-2]
                         stack.pop(-2)
                     else:                                           #新运算符优先级为1
-                        for n in stack[:-1][::-1]:
+                        for n in stack[-2::-1]:
                             result = result + n
                         stack = [stack[-1]]
         elif x == '(':
