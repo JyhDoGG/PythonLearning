@@ -12,7 +12,7 @@ import threading
 
 def TestWeb(url):       #测试网站是否OK
     counter = 0
-	while counter < 3:
+    while counter < 3:
         conn = http.client.HTTPConnection ('ce.sysu.edu.cn')
         conn.request('GET', url)
         r = conn.getresponse()
