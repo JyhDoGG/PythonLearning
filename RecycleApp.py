@@ -11,18 +11,17 @@ import os
 import threading
 
 def TestWeb(url):       #测试网站是否OK
-    conn = http.client.HTTPConnection ('ce.sysu.edu.cn')
-    conn.request('GET', url)
-    r = conn.getresponse()
-    x = r.status    #获得网页状态码
     counter = 0
-    while counter < 3:
+	while counter < 3:
+        conn = http.client.HTTPConnection ('ce.sysu.edu.cn')
+        conn.request('GET', url)
+        r = conn.getresponse()
+        x = r.status    #获得网页状态码
         if x == 200:
-            counter = 0
             time.sleep(60)
         else:
             counter += 1
-            time.sleep(30)
+            time.sleep(10)
     if counter >= 3:   #如果连续三次状态码不是200，回收应用程序池
         RecycleAPP(url)
         
